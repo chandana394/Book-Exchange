@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Book Exchange</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="js/bootstrap.min.js" rel="stylesheet" >
+</head>
+<body>
+  <div>
+<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+  <ul class="navbar-nav " >
+    <li class="nav-item active">
+      <a class="nav-link" href="index.html" style="font-size: 20">Book Exchange.com</a>
+    </li>
+    <li class="nav-item"style="float: right">
+      <a class="nav-link" href="about us.html" style="font-size: 20">About Us</a>
+    </li>
+    <li class="nav-item"style="float: right">
+      <a class="nav-link" href="reg.html" style="font-size: 20">Register</a>
+    </li>
+  </ul>
+</nav>
+
+<div style="background-image: url(img/book.jpg); background-size: cover; height: 470px">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4" style="padding-left: ">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding-left: 70px;font-size: 25;color: purple">
+                  <strong style="color:black">LOGIN</strong>
+                </div>
+                <br>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form" method="post" action="database.php">
+                    <div class="form-group" style="font-size: 23">
+                        <label for="inputEmail3" class="col-sm-3 control-label">
+                            EMAIL<font color="black" >*</font></label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="inputEmail3" name='lmail' placeholder="Email" required="">
+                        </div>
+                    </div>
+                    <div class="form-group" style="font-size: 23">
+                        <label for="inputPassword3" class="col-sm-3 control-label">
+                            PASSWORD<font color="black">*</font></label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" id="inputPassword3" name='lpass' placeholder="Password" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9" >
+                            <div class="checkbox" style="font-size: 20 ">
+                                <label>
+                                    
+                                    <a href="changepassword.php">Forgot Password</a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group last">
+                        <div class="col-sm-offset-3 col-sm-9" style="padding-left: 70px;padding-top: ">
+                            <button type="submit" name='login' class="btn btn-success btn-sm">
+                                LOG IN</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="panel-footer" style="color: purple;font-size: 20">
+                    Not Registered? <a href="reg.html">Register Here</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+<footer style="background-color: black;color:white;position: fixed; left: 0;bottom: 0; width: 100%"align="middle" ><br>copyright&copybook exchange.com 2020<br><br></footer>
+</div>
+</html>
